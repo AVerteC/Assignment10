@@ -49,7 +49,7 @@ album2.play()
 album2.play()
 album3.play()
 
-console.log(`Your favorite album is: ${jbox.favoriteAlbum()}`)
+// console.log(`Your favorite album is: ${jbox.favoriteAlbum()}`)
 
 let currentlySelectedAlbum
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         newEntry.href = "#"
         newEntry.textContent = `${album.artist} - ${album.title}`
         newEntry.classList.add("dropdown-item")
-        console.log(`Just Added: ${album.artist} - ${album.title}`)
+        // console.log(`Just Added: ${album.artist} - ${album.title}`)
         // Update current album selected
         newEntry.addEventListener("click", function () {
             currentlySelectedAlbum = album
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let showFavAlbumBtn = document.querySelector("#showFavoriteAlbumButton")
     showFavAlbumBtn.addEventListener("click", (e) => {
         let favAlbumText = document.querySelector("#favoriteAlbum")
-        favAlbumText.textContent = jbox.favoriteAlbum()
+        favAlbumText.textContent = "Favorite Album: " + jbox.favoriteAlbum()
     })
 })
 
