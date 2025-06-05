@@ -15,10 +15,13 @@
 // STEP 3
 // class Animal {
 //     constructor() {
+//     }
+//     say() {
 //         console.log('The Animal has been created')
 //     }
 // }
 // let creature = new Animal()
+// creature.say()
 
 // STEP 4
 // class Animal {
@@ -73,14 +76,14 @@
 //         } else if (this.type === 'cat') {
 //             verb = 'meowing'
 //         }
-//         console.log(`The ${this.color} ${this.type} is ${verb}!`)
+//         return (`The ${this.color} ${this.type} is ${verb}!`)
 //     }
 // }
 
 // let cat = new Animal('cat', 'bengal', 'yellow', '8', '14')
 // let dog = new Animal('dog', 'dalmatian', 'white', '27', '31')
-// cat.speak()
-// dog.speak()
+// console.log(cat.speak())
+// console.log(dog.speak())
 
 // // STEP 8
 // class Animal {
@@ -113,9 +116,8 @@
 
 // let cat = new Animal('cat', 'bengal', 'yellow', '8', '14')
 // let dog = new Animal('dog', 'dalmatian', 'white', '27', '31')
-// // cat.speak()
-// // dog.speak()
-// console.log(dog.speak())
+// cat.speak()
+// dog.speak()
 
 // STEP 9
 // String.prototype.findWords = function (word) {
